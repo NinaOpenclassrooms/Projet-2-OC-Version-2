@@ -1,0 +1,569 @@
+/* Général */
+* {
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+   /* box-sizing est appliqué à tous les éléments */
+   }
+   *:visited { 
+      color: black;
+     }
+   .box {
+      box-sizing: border-box; /* Opera/IE 8+ */
+      -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+      -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+   }
+   body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0px 20px;
+      font-size: 12px;
+     }
+   i {
+      font-size: 16px;
+   }
+/* Header */
+#logo {
+    height: 40px;  
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0px;
+}
+ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+}
+#accomodation, #activities {
+    padding: 40px 20px 10px 20px;
+}
+
+#accomodation:hover, #activities:hover {
+    border-top: 3px solid #0065FC; /* REDUIRE A 2PX? */
+    color: #0065FC; /* FAIRE AUTRE REGLE POUR TELEPHONE */
+}
+/* Fonts */
+h1 {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ h2, #ville { /* La VILLE Ne S'AFFICHE PAS ASSEZ NOIRE */
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+ }
+ h3 {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 12px;
+    background-color: #0065FC;
+ }
+ h4 {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+ }
+ /* Section de recherche */
+#research_form_container {
+    width: 400px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 15px;
+    overflow: hidden;
+ }
+form input {
+    height: 34px;
+    border-style: none;
+ }
+#location_dot_icon_container {
+    height: 36px;
+    padding: 10px 12px 6px 12px;
+    background-color: #F2F2F2;
+ } 
+ #ville {
+    text-align: left;
+ }
+#magnifying_glass_icon_container {
+    display: none;
+ }
+
+ /* Section Filtres */
+#filter_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+ }
+ #filter_elements_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+ }
+ .filter_icon_container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    right: 5px;
+ }
+ #child_reaching_icon { /* VERIFIER CLASS OU ID */
+    padding: 10px 12px;
+ }
+ .filter_text_container {
+    margin-left: 10px;
+    padding-right: 15px;
+ }
+ .filter_element {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 30px;
+    border:3px solid #F2F2F2;
+    margin: 6px 0px 6px 15px;
+ }
+ .filter_element h2:hover { /* EFFET A RAJOUTER SI TEMPS */
+   color: #0065FC;
+ }
+ #information {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+ }
+ #information_text_container {
+    margin-left: 10px;
+ }
+ /* Main */
+article, aside, footer {
+   background-color: #F2F2F2; 
+}
+
+/* Section 1 */
+#section1 {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+
+/* Aside */
+aside {
+   width: 33%;
+   border-radius: 15px;
+   display: flex;
+   justify-content: space-between;
+}
+#aside_container {
+   height: 100%;
+   margin: auto;
+}
+#aside_title_container {
+   width: 100%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#aside_cards_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Aside Card */
+.aside_card {
+   width: 240px;
+   height: 115px;
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+   background-color: white;
+   border: 4px solid white;
+   border-radius: 15px;
+   box-shadow: 6px 6px 6px gainsboro;
+}
+.aside_card_image {
+   width: 40%;
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+   border-radius: 15px 0px 0px 15px;
+}
+.aside_card_image img {
+   max-height: 100%;
+   position: absolute;
+   left: -30px;
+}
+.aside_card_body {
+   width: 60%;
+   padding-left: 10px;
+}
+.aside_card_body h4, .aside_card_body p {
+   margin: 0px;
+   padding-top: 4px;
+   padding-bottom: 0px;
+}
+/* Article */
+article {
+   width: 67%;
+   border-radius: 15px;
+   margin-right: 20px;
+}
+#accomodation_container {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0px 20px;
+
+}
+#accomodation_cards_container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+/* Accomodation Card */
+.accomodation_card {
+   width: 180px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 10px;
+   background-color: white;
+   border: 4px solid white;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 6px 6px 6px gainsboro;
+}
+.accomodation_card h2:hover, .accomodation_card p:hover, .accomodation_card strong:hover { 
+   color: #0065FC; /* MODIFIER POUR QUE LE STRONG CHANGE DE COULEUR EN MEME TEMPS QUE LE RESTE*/
+}
+
+.accomodation_card_image {
+   width: 100%;
+   height: 155%; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+   border-radius: 15px 15px 0px 0px;
+}
+
+.accomodation_card_image img {
+   max-width: 100%;
+   position: absolute;
+   bottom: -15px;
+}
+.accomodation_card_body {
+   width: 100%;
+   height: 110%; /* A MODIFIER */
+   display: inline-block;
+   vertical-align: bottom;
+   padding-left: 10px;
+}
+.accomodation_card_body h4, .accomodation_card_body p {
+   margin: 0px;
+   padding-top: 4px;
+   padding-bottom: 0px;
+}
+.accomodation_card i, .aside_card i { 
+   font-size: 10px;
+}
+.review_container {
+   padding-top: 4px;
+}
+#section1 {
+   display: flex;
+   justify-content: space-between;
+}
+/* Section 2 */
+#activities_container {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.activities_container_full_size {
+   width: 200px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   border-radius: 15px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+.activities_container_vieux_port, .activities_container_parc_calanques {
+   width: 200px;
+   height: 300px;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 6px 6px 6px gainsboro;
+   margin-bottom: 20px;
+}
+.activities_container_fort_pomergues {
+   width: 200px;
+   height: 200px;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 6px 6px 6px gainsboro;
+   margin-bottom: 20px;
+}
+.activities_container_iles_frioul {
+   width: 200px;
+   height: 100px;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 6px 6px 6px gainsboro;
+   margin-bottom: 20px;
+}
+.activities_container_notre_dame_garde, .activities_container_parc_longchamp {
+   width: 200px;
+   height: 150px;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 6px 6px 6px gainsboro;
+   margin-bottom: 20px;
+}
+
+.activities_container_vieux_port .activities_image {
+   width: 100%;
+   height: 230px; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+}
+.activities_container_vieux_port img {
+   height: 100%;
+   position: absolute;
+   left: -50px;
+}
+.activities_container_fort_pomergues .activities_image {
+   width: 100%;
+   height: 130px; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+}
+.activities_container_fort_pomergues img {
+   height: 100%; /* A MODIFIER, MODIFIER LA TAILLE DE LA PHOTO*/
+   min-width: 100%;
+   position: absolute;
+}
+.activities_container_iles_frioul .activities_image {
+   width: 100%;
+   height: 40px; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+}
+.activities_container_iles_frioul img {
+   height: 100%; /* A MODIFIER, MODIFIER LA TAILLE DE LA PHOTO*/
+   min-width: 100%;
+   position: absolute;
+}
+.activities_container_parc_calanques .activities_image {
+   width: 100%;
+   height: 230px; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+}
+.activities_container_parc_calanques img {
+   height: 100%;
+   position: absolute;
+   left: -100px;
+}
+.activities_container_notre_dame_garde .activities_image {
+   width: 100%;
+   height: 90px; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+}
+.activities_container_notre_dame_garde img {
+   height: 100%;
+   min-width: 100%;
+   position: absolute;
+}
+.activities_container_parc_longchamp .activities_image {
+   width: 100%;
+   height: 90px; /* A MODIFIER */
+   position: relative;
+   object-fit: cover;
+   overflow: hidden;
+}
+.activities_container_parc_longchamp img {
+   height: 100%;
+   min-width: 100%;
+   position: absolute;
+}
+
+#section2 h2 {
+   width: 200px;
+   height: 40px;
+   display: inline-block; /* A MODIFIER FONCTIONNE PAS */
+   vertical-align: baseline; /* A MODIFIER FONCTIONNE PAS */
+}
+
+/* Footer */
+footer {
+   width: auto;
+   display:flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0px; /* NE FONCTIONNE PAS POUR METTRE LE FOOTER SUR TOUTE LA LONGUEUR*/
+}
+.footer_elements_container {
+   width: 300px;
+   display:flex;
+   flex-direction: column;
+   margin-top: 10px;
+   margin-right: 70px;
+   padding: 20px;
+}
+.footer_elements_container ul {
+   padding: 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.footer_elements_container li {
+   padding-bottom: 10px;
+}
+.footer_elements_container h2 {
+   margin-bottom: 0px;
+}
+ /* Media Queries */
+/* Media Query Mobile */
+@media screen and (max-width: 768px)
+{
+   body {
+      margin: 0px;
+   } 
+   header {
+       width: 100%;
+       margin-right: 0px; /* A ENLEVER? */
+       margin-left: 0px; /* A ENLEVER? */
+       display: flex; /* PEUT-ON ENLEVER DISPLAY? */
+       flex-direction: column;
+       justify-content: center;
+    }
+    nav { /* A ENLEVER? */ /* METTRE LA BOITE SUR TOUTE LA LONGUEUR */
+        width: 100%; /* A ENLEVER? */
+        margin: 0px; /* A ENLEVER? */
+        padding: 0px;
+        border: 2px solid pink; /* A ENLEVER? */
+    }
+    nav ul { /* A ENLEVER */ /* METTRE LA BOITE SUR TOUTE LA LONGUEUR */
+        width: 100%; /* A ENLEVER */
+        margin: auto; /* A ENLEVER */
+        border: 2px solid orange; /* A ENLEVER */
+    }
+    nav li { 
+        width: 50%; /* MARGE A GAUCHE, POURQUOI? */
+        margin: auto;
+        text-align: center;
+        padding: 10px 20px;
+        border: 2px solid green;
+    }
+    #accomodation:hover, #activities:hover {
+        border-top: hidden;
+    }
+    nav li:hover {
+        border-bottom: 3px solid #0065FC;
+    }
+    h3 {
+        display: none;
+    }
+    #research_form_container {
+        width: 260px;
+        height: 36px;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #F2F2F2;
+        border-radius: 15px;
+        overflow: hidden;
+     }
+    #magnifying_glass_icon_container {
+    display: flex;
+    height: 36px;
+    padding: 10px 14px 6px 12px;
+    background-color: #0065FC;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    }
+    #research_section h1, #research_section p, #filter_section + h2 { /* NE FONCTIONNE PAS POUR LES FILTRES */
+      margin-left: 20px;
+    }
+    #information {
+        margin: 20px;
+    }
+    #section1 {
+      display: flex;
+      flex-direction: column;
+   }
+   aside {
+      width: 100%;
+      border-radius: 0px;
+   }
+   #aside_container {
+      width: 100%;
+      margin: auto; /* A MODIFIER, NON CENTRE*/
+   }
+   article {
+      width: 100%;
+      background-color: white;
+   }
+   #accomodation_container {
+      width: 100%;
+      margin: auto;
+   }
+   .activities_container_full_size, {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+   }
+   .footer_elements_container {
+      margin: auto;
+   }
+}
+
+/* Media Query Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    header { /* A CENTRER */
+        width: 100%;
+        display: flex; /* PEUT-ON ENLEVER DISPLAY? */
+        flex-direction: column; 
+        justify-content: center;
+     }
+     #accomodation:hover, #activities:hover {
+        border-top: hidden;
+        border-bottom: 3px solid #0065FC;
+    }
+    #activities_container {
+      flex-direction: column;
+    }
+   .activities_container_full_size {
+      margin: auto;
+}
