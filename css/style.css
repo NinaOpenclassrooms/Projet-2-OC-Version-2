@@ -21,9 +21,10 @@
    i {
       font-size: 16px;
    }
+
 /* Header */
 #logo {
-    height: 40px;  
+   height: 40px;  
 }
 header {
    display: flex;
@@ -37,117 +38,125 @@ ul {
    justify-content: space-around;
 }
 #accomodation, #activities {
-    padding: 40px 20px 10px 20px;
+   padding: 40px 20px 10px 20px;
 }
 #accomodation:hover, #activities:hover {
-    border-top: 3px solid #0065FC; /* REDUIRE A 2PX? */
-    color: #0065FC; /* FAIRE AUTRE REGLE POUR TELEPHONE */
+   border-top: 3px solid #0065FC; /* REDUIRE A 2PX? */
+   color: #0065FC; /* FAIRE AUTRE REGLE POUR TELEPHONE */
 }
+
 /* Fonts */
 h1 {
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
+   color: black;
+   font-size: 20px;
+   font-weight: 700;
  }
- h2, #ville { /* La VILLE NE S'AFFICHE PAS ASSEZ NOIRE */
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
+h2, #ville {
+   color: black;
+   font-size: 16px;
+   font-weight: bold;
  }
- h3 {
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    font-weight: 600;
-    padding: 10px 12px;
-    background-color: #0065FC;
+h3 {
+   color: white;
+   font-size: 14px;
+   text-align: center;
+   font-weight: 600;
+   padding: 10px 12px;
+   background-color: #0065FC;
  }
- h4 {
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
- }
- /* Section de recherche */
-#research_form_container {
-    width: 400px;
-    height: 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #F2F2F2;
-    border-radius: 15px;
-    overflow: hidden;
- }
-form input {
-    height: 34px;
-    border-style: none;
- }
-#location_dot_icon_container {
-    height: 36px;
-    padding: 10px 12px 6px 12px;
-    background-color: #F2F2F2;
- } 
- #ville {
-    text-align: left;
- }
-#magnifying_glass_icon_container {
-    display: none;
+h4 {
+   color: black;
+   font-size: 14px;
+   font-weight: bold;
  }
 
- /* Section Filtres */
+/* Research Section */
+#research_form_container {
+   width: 400px;
+   height: 36px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 2px solid #F2F2F2;
+   border-radius: 15px;
+   overflow: hidden;
+ }
+form input {
+   height: 34px;
+   border-style: none;
+ }
+#location_dot_icon_container {
+   height: 36px;
+   padding: 10px 12px 6px 12px;
+   background-color: #F2F2F2;
+ } 
+#ville {
+   text-align: left;
+ }
+#magnifying_glass_icon_container {
+   display: none;
+ }
+
+/* Filter Section */
 #filter_section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 20px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 30px;
+   margin-bottom: 20px;
  }
- #filter_elements_container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+#filter_elements_container {
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
  }
- .filter_icon_container {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    padding: 10px;
-    position: relative;
-    right: 5px;
+.filter_icon_container {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #DEEBFF;
+   border-radius: 50%;
+   padding: 10px;
+   position: relative;
+   right: 5px;
  }
- #child_reaching_icon { /* VERIFIER CLASS OU ID */
-    padding: 10px 12px;
+#child_reaching_icon {
+   padding: 10px 12px;
  }
- .filter_text_container {
-    margin-left: 10px;
-    padding-right: 15px;
+.filter_text_container {
+   margin-left: 10px;
+   padding-right: 15px;
  }
- .filter_element {
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    border-radius: 30px;
-    border:3px solid #F2F2F2;
-    margin: 6px 0px 6px 15px;
+.filter_element {
+   display: flex;
+   justify-content:space-between;
+   flex-wrap: wrap;
+   align-items: center;
+   border-radius: 30px;
+   border:3px solid #F2F2F2;
+   margin: 6px 0px 6px 15px;
+   transform: scale(1);
+   transition-property: transform;
+   transition-duration: 400ms;
  }
- .filter_element h2:hover { /* EFFET A RAJOUTER SI TEMPS */
-   color: #0065FC;
- }
- #information {
+.filter_element:hover {
+   transform: scale(1.15);
+   border: 3px solid rgba(00, 101, 252, 0.5);
+   background-color: rgba(00, 101, 252, 0.5);
+}
+#information {
     display: flex;
     justify-content:flex-start;
     align-items: center;
  }
- #information_text_container {
+#information_text_container {
     margin-left: 10px;
  }
- /* Main */
+
+/* Main */
 article, aside, footer {
    background-color: #F2F2F2; 
 }
@@ -166,6 +175,8 @@ aside {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+   padding-top: 20px;
+   padding-left: 30px;
 }
 #aside_title_container {
    width: auto;
@@ -219,11 +230,11 @@ aside {
 /* Article */
 article {
    width: 67%;
+   height: 100%;
    border-radius: 15px;
    margin-right: 20px;
-}
-#accomodation_container {
-   height: 100%;
+   padding-top: 20px;
+   padding-left: 30px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -264,7 +275,6 @@ article {
    overflow: hidden;
    border-radius: 15px 15px 0px 0px;
 }
-
 .accomodation_card_image img {
    max-width: 100%;
    position: absolute;
@@ -457,9 +467,9 @@ footer {
    } 
    header {
       width: 100%;
-      margin-right: 0px; /* A ENLEVER? */
-      margin-left: 0px; /* A ENLEVER? */
-      display: flex; /* PEUT-ON ENLEVER DISPLAY? */
+      margin-right: 0px;
+      margin-left: 0px; 
+      display: flex; 
       flex-direction: column;
       justify-content: center;
    }
@@ -520,10 +530,7 @@ footer {
    article {
       width: 100%;
       background-color: white;
-   }
-   #accomodation_container {
-      width: 100%;
-      margin: auto;
+      margin: 0px;
    }
    .accomodation_card {
       width: 320px;
@@ -575,10 +582,7 @@ footer {
    article {
       width: 100%;
       background-color: white;
-   }
-   #accomodation_container {
-      width: 100%;
-      margin: auto;
+      margin: 0px;
    }
    .accomodation_card {
       width: 320px;
