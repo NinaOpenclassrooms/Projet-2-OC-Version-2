@@ -30,14 +30,16 @@
       <p>En plein centre ville ou en pleine nature</p>
       <div id="research_form_container">
         <div id="location_dot_icon_container">
-          <i class="fa-solid fa-location-dot" style="color:black"></i>
+          <i class="fa-solid fa-location-dot"></i>
         </div>
         <form method="post" action="traitement.php"> <!--Formulaire de saisie-->
-          <input type="text" name="ville" id="ville" placeholder="Marseille, France" size="18"/>
+          <input type="text" name="ville" id="ville" placeholder="Marseille, France">
         </form>
         <h3>Rechercher</h3>
         <div id="magnifying_glass_icon_container">
-          <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+          <div id="magnifying_glass_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -48,7 +50,7 @@
       <div id="filter_elements_container">
         <div class="filter_element">
           <div class="filter_icon_container">
-            <i class="fa-solid fa-money-bill-wave" style="color:#0065FC"></i>
+            <i class="fa-solid fa-money-bill-wave"></i>
           </div>
           <div class="filter_text_container">
             <h2>Économique</h2>
@@ -57,7 +59,7 @@
         <div class="filter_element">
           <div class="filter_icon_container">
             <div id="child_reaching_icon">
-              <i class="fa-solid fa-child-reaching" style="color:#0065FC"></i>
+              <i class="fa-solid fa-child-reaching"></i>
             </div>
           </div>
           <div class="filter_text_container">
@@ -66,7 +68,7 @@
         </div>
         <div class="filter_element">
           <div class="filter_icon_container">
-            <i class="fa-solid fa-heart" style="color:#0065FC"></i>
+            <i class="fa-solid fa-heart"></i>
           </div> 
           <div class="filter_text_container">
             <h2>Romantique</h2>
@@ -74,7 +76,7 @@
         </div>
         <div class="filter_element">
           <div class="filter_icon_container">
-            <i class="fa-solid fa-dog" style="color:#0065FC"></i>
+            <i class="fa-solid fa-dog"></i>
           </div>
           <div class="filter_text_container">
             <h2>Animaux autorisés</h2> 
@@ -84,7 +86,7 @@
     </section>
     <div id="information">
       <div id="circle_info_icon_container">
-        <i class="fa-solid fa-circle-info" style="color:#0065FC"></i>
+        <i class="fa-solid fa-circle-info"></i>
       </div>
       <div id="information_text_container">
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -103,7 +105,7 @@
           <div id="aside_title_container">
             <h1>Les plus populaires</h1>
             <div id="solid_star_icon_container">
-              <i class="fa-solid fa-star" style="color:black"></i>
+              <i class="fa-solid fa-star black"></i>
             </div>
           </div>
           <div id="aside_cards_container">
@@ -118,11 +120,11 @@
                     <p>Nuit à partir de 128€</p>
                   </div>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #0065FC"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
                   </div>
                 </div>
               </a>
@@ -138,11 +140,11 @@
                     <p>Nuit à partir de 71€</p>
                   </div>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
                   </div>
                 </div>
               </a>
@@ -158,11 +160,11 @@
                     <p>Nuit à partir de 68€</p>
                   </div>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
                   </div>
                 </div>
               </a>
@@ -185,11 +187,11 @@
                   <h4>Auberge La Cannebière</h4>
                   <p>Nuit à partir de <strong>25€</strong></p>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
                   </div>
                 </div>
               </a>
@@ -203,11 +205,11 @@
                   <h4>Hôtel du port</h4>
                   <p>Nuit à partir de 52€</p>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #0065FC"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
                   </div>
                 </div>
               </a>
@@ -221,11 +223,11 @@
                   <h4>Hôtel Les mouettes</h4>
                   <p>Nuit à partir de 76€</p>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
                   </div>
                 </div>
               </a>
@@ -239,11 +241,11 @@
                   <h4>Hôtel de la mer</h4>
                   <p>Nuit à partir de 46€</p>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#F2F2F2"></i>
-                    <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
                   </div>
                 </div>
               </a>
@@ -257,11 +259,11 @@
                   <h4>Auberge Le Panier</h4>
                   <p>Nuit à partir de <strong>23€</strong></p>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star uncolored"></i>
                   </div>
                 </div>
               </a>
@@ -275,11 +277,11 @@
                   <h4>Hôtel chez Amina</h4>
                   <p>Nuit à partir de 96€</p>
                   <div class="review_container">
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                    <i class="fa-solid fa-star" style="color: #0065FC"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
+                    <i class="fa-solid fa-star colored"></i>
                   </div>
                 </div>
               </a>
