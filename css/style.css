@@ -98,7 +98,6 @@ h4 {
    overflow: hidden;
 }
 form input {
-   height: 34px;
    border-style: none;
 }
 #location_dot_icon_container {
@@ -514,23 +513,28 @@ footer {
       display: none;
    }
    #research_form_container {
-      width: 290px;
+      width: 276px;
       height: 36px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       margin:auto;
       border: 2px solid #F2F2F2;
       border-radius: 15px;
       overflow: hidden;
    }
+   #location_dot_icon_container {
+      width: 36px;
+   }
+   form {
+      width: 200px;
+   }
    #magnifying_glass_icon_container {
       display: flex;
+      width: 40px;
       height: 36px;
-      padding: 10px 14px 6px 12px;
+      padding: 10px 20px 6px 12px;
       background-color: #0065FC;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
    }
    #research_section h1, #research_section p, #h2_filters { 
       margin-left: 20px;
