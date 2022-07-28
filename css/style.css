@@ -98,6 +98,7 @@ h4 {
    overflow: hidden;
 }
 form input {
+   width: 250px;
    border-style: none;
 }
 #location_dot_icon_container {
@@ -525,16 +526,24 @@ footer {
    }
    #location_dot_icon_container {
       width: 36px;
+      padding: 10px 10px 6px 8px;
+      border-left: 4px solid #F2F2F2;
    }
    form {
-      width: 200px;
+      width: 198px;
+   }
+   form input {
+      width: 193px;
    }
    #magnifying_glass_icon_container {
       display: flex;
+      align-self: flex-end;
       width: 40px;
-      height: 36px;
-      padding: 10px 20px 6px 12px;
+      height: 34px;
+      padding-top: 10px;
+      padding-left: 12px;
       background-color: #0065FC;
+      border-right: 4px solid #0065FC;
    }
    #research_section h1, #research_section p, #h2_filters { 
       margin-left: 20px;
